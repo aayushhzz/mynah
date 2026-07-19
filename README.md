@@ -24,9 +24,22 @@ Most meeting note-taking tools send your audio to a company's servers to transcr
 
 This also means it keeps working without an internet connection, and it costs nothing to run — no per-minute transcription fees, no monthly subscription.
 
-## Before you start
+## Easy installation guide
 
-You'll need a Mac (Mynah uses Apple's built-in tools to capture system audio) and a few free programs installed. If you don't have these yet:
+You'll need a Mac. Open the **Terminal** app, go into this project folder, and run:
+
+```bash
+./install.sh
+```
+
+This sets everything up for you — no other steps needed. When it's done, close the Terminal window, open a new one, and you're ready to go.
+
+The first time you record, macOS will ask you to grant Screen Recording permission (this is how Mynah is able to hear the other people in your meeting, not just your own microphone) — just click **Allow**.
+
+<details>
+<summary>Manual installation (if you'd rather run each step yourself)</summary>
+
+You'll need a few free programs installed. If you don't have these yet:
 
 ```bash
 brew install ffmpeg ollama uv
@@ -44,13 +57,13 @@ swiftc tools/system_audio_recorder/main.swift -o tools/system_audio_recorder/sys
 
 The last command builds the small helper that lets Mynah listen to your speaker output — it only needs to be built once.
 
-The first time you record, macOS will ask you to grant Screen Recording permission (this is how it's able to hear your speaker output, not just your mic) — just approve it once in System Settings.
-
 If you'd like to run `mynah` from anywhere instead of typing the full path every time, link it into a folder that's on your PATH:
 
 ```bash
 ln -s "$(pwd)/run.py" ~/.local/bin/mynah
 ```
+
+</details>
 
 ## How to use it
 
