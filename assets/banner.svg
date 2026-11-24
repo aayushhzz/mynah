@@ -1,0 +1,95 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 320" width="1200" height="320" role="img" aria-label="Mynah — Free, 100% Offline AI Meeting Assistant for macOS">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0b1120"/>
+      <stop offset="55%" stop-color="#111c33"/>
+      <stop offset="100%" stop-color="#0d1726"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38bdf8"/>
+      <stop offset="50%" stop-color="#2dd4bf"/>
+      <stop offset="100%" stop-color="#34d399"/>
+    </linearGradient>
+    <linearGradient id="waveGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#38bdf8" stop-opacity="0"/>
+      <stop offset="25%" stop-color="#38bdf8" stop-opacity="0.35"/>
+      <stop offset="55%" stop-color="#2dd4bf" stop-opacity="0.45"/>
+      <stop offset="100%" stop-color="#34d399" stop-opacity="0"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="20%" cy="50%" r="35%">
+      <stop offset="0%" stop-color="#2dd4bf" stop-opacity="0.22"/>
+      <stop offset="100%" stop-color="#2dd4bf" stop-opacity="0"/>
+    </radialGradient>
+    <clipPath id="cardClip">
+      <rect width="1200" height="320" rx="20"/>
+    </clipPath>
+  </defs>
+
+  <g clip-path="url(#cardClip)">
+    <rect width="1200" height="320" fill="url(#bg)"/>
+    <rect width="1200" height="320" fill="url(#glow)"/>
+
+    <!-- Subtle background acoustic waveform lines -->
+    <path d="M0 245 Q150 200 300 245 T600 245 T900 235 T1200 245" fill="none" stroke="url(#waveGrad)" stroke-width="2"/>
+    <path d="M0 265 Q180 230 360 265 T720 260 T1080 250 T1200 265" fill="none" stroke="url(#waveGrad)" stroke-width="1.5" opacity="0.7"/>
+    <path d="M0 75 Q220 45 440 75 T880 70 T1200 85" fill="none" stroke="url(#waveGrad)" stroke-width="1.2" opacity="0.45"/>
+
+    <!-- Subtle dot grid on right -->
+    <g fill="#94a3b8" opacity="0.14">
+      <circle cx="1040" cy="52" r="2"/><circle cx="1068" cy="52" r="2"/><circle cx="1096" cy="52" r="2"/><circle cx="1124" cy="52" r="2"/><circle cx="1152" cy="52" r="2"/>
+      <circle cx="1040" cy="80" r="2"/><circle cx="1068" cy="80" r="2"/><circle cx="1096" cy="80" r="2"/><circle cx="1124" cy="80" r="2"/><circle cx="1152" cy="80" r="2"/>
+      <circle cx="1040" cy="108" r="2"/><circle cx="1068" cy="108" r="2"/><circle cx="1096" cy="108" r="2"/><circle cx="1124" cy="108" r="2"/><circle cx="1152" cy="108" r="2"/>
+    </g>
+
+    <!-- Emblem container -->
+    <g transform="translate(88, 66)">
+      <rect x="0" y="0" width="188" height="188" rx="34" fill="#0f172a" stroke="#1e293b" stroke-width="2"/>
+      <rect x="10" y="10" width="168" height="168" rx="26" fill="none" stroke="url(#accent)" stroke-width="1.5" opacity="0.35"/>
+
+      <!-- Outer soundwave rings -->
+      <circle cx="94" cy="94" r="64" fill="none" stroke="#38bdf8" stroke-width="1.5" stroke-dasharray="6 6" opacity="0.45"/>
+
+      <!-- Audio waveform bars behind bird -->
+      <g fill="url(#accent)" opacity="0.85">
+        <rect x="34" y="88" width="6" height="24" rx="3"/>
+        <rect x="46" y="76" width="6" height="48" rx="3"/>
+        <rect x="136" y="76" width="6" height="48" rx="3"/>
+        <rect x="148" y="88" width="6" height="24" rx="3"/>
+      </g>
+
+      <!-- Stylized Mynah bird silhouette -->
+      <path d="M64 114 C64 84 82 64 104 62 C114 61 122 66 126 73 L138 75 L127 83 C126 106 108 124 84 128 L66 138 L74 122 C67 120 64 117 64 114 Z" fill="url(#accent)"/>
+      <!-- Wing accent -->
+      <path d="M77 108 C84 94 98 86 114 86 C105 99 93 108 77 108 Z" fill="#0b1120" opacity="0.55"/>
+      <!-- Eye -->
+      <circle cx="112" cy="74" r="3.2" fill="#0b1120"/>
+      <!-- Yellow mynah beak highlight -->
+      <path d="M125 72 L139 75 L127 80 Z" fill="#fbbf24"/>
+    </g>
+
+    <!-- Title and copy -->
+    <g transform="translate(320, 95)">
+      <text x="0" y="34" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="60" font-weight="800" fill="#f8fafc" letter-spacing="-1.5">Mynah</text>
+      <text x="2" y="74" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="23" font-weight="400" fill="#cbd5e1">Free, 100% offline AI meeting assistant for macOS</text>
+      <text x="2" y="106" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="16" font-weight="400" fill="#94a3b8">Records mic + system audio, transcribes locally, summarizes decisions &amp; action items.</text>
+
+      <!-- Feature pills -->
+      <g transform="translate(0, 132)" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="13" font-weight="600">
+        <rect x="0" y="0" width="166" height="32" rx="16" fill="#0f172a" stroke="#38bdf8" stroke-opacity="0.5"/>
+        <text x="83" y="21" text-anchor="middle" fill="#7dd3fc">ScreenCaptureKit</text>
+
+        <rect x="178" y="0" width="144" height="32" rx="16" fill="#0f172a" stroke="#2dd4bf" stroke-opacity="0.5"/>
+        <text x="250" y="21" text-anchor="middle" fill="#5eead4">faster-whisper</text>
+
+        <rect x="334" y="0" width="114" height="32" rx="16" fill="#0f172a" stroke="#34d399" stroke-opacity="0.5"/>
+        <text x="391" y="21" text-anchor="middle" fill="#6ee7b7">Ollama LLM</text>
+
+        <rect x="460" y="0" width="128" height="32" rx="16" fill="#0f172a" stroke="#fbbf24" stroke-opacity="0.5"/>
+        <text x="524" y="21" text-anchor="middle" fill="#fde68a">SQLite FTS5</text>
+      </g>
+    </g>
+
+    <!-- Outer frame border -->
+    <rect x="1" y="1" width="1198" height="318" rx="19" fill="none" stroke="#1e293b" stroke-width="2"/>
+  </g>
+</svg>
